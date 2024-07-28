@@ -1,0 +1,18 @@
+.footerDisplay{
+    display: inline;
+}
+
+@media only screen and (max-width:1000px){
+    .footerDisplay{
+        display: none;
+    }
+    #footerLogo{
+        text-align: center;
+    }
+
+    .detailsDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

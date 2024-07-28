@@ -1,9 +1,10 @@
 import React from 'react';
 import FeatureVideo from '../components/video/FeatureVideo';
 import FeatureCard from '../components/FeatureCard';
-import { collageFeatures,collageCourse } from '../data';
+import { collageFeatures, collageCourse } from '../data';
 import AboutCard from '../components/AboutCard';
 import CourseCard from '../components/CourseCard';
+import IntershipCard from '../components/cards/IntershipCard';
 
 function Home() {
   return (
@@ -11,7 +12,7 @@ function Home() {
       <div>
         <FeatureVideo />
       </div>
-    {/* feature section */}
+      {/* feature section */}
       <div className='container my-3'>
         <div className="text-center">
           <h2 className="fw-bold my-3">Our Special Features</h2>
@@ -32,18 +33,28 @@ function Home() {
         </div>
       </div>
 
-      <div className='container'>
+      <div className='container mb-4'>
         <div>
           <h1 className='fw-bold'>Academic Programs</h1>
           <hr />
         </div>
-        <div className="row my-2">
+        <div className="row d-flex justify-content-center my-2">
           {collageCourse.map(data => (
             <CourseCard tittle={data.tittle} description={data.description} feature={data.features} />
           ))}
         </div>
       </div>
-      
+
+      <div className="container my-5">
+        <div>
+          <h1 className='fw-bold mb-4'>Faculties</h1>
+        </div>
+        <div className='row'>
+          <IntershipCard name={"Mr. Muhammed Jouhar KK"}/>
+          <IntershipCard name={'Jabir'}/>
+        </div>
+      </div>
+
     </>
   )
 }

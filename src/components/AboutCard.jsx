@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card,Button } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
+import './cards/style.css';
 
 
 function AboutCard() {
@@ -13,11 +14,11 @@ function AboutCard() {
                 </div>
 
                 <div className='row my-5'>
-                    <div className='col-lg-4'>
-                    <img src="http://exesunrise.com/public/img/images/about1.webp" style={{width:"100%", height:"270px"}} alt="" srcset="" />
+                    <div className='col-lg-4 col-11 mx-auto'>
+                    <img src="http://exesunrise.com/public/img/images/about1.webp" className='rounded-2' style={{width:"100%", height:"270px"}} alt="" srcset="" />
                     </div>
-                    <div className='col-lg-8'>
-                        <p style={{fontSize:"18px"}}>
+                    <div className='col-lg-8 col-11 mx-auto'>
+                        <p id='aboutDescription'>
                             Welcome to Sunrise College of Advanced Studies (SRC), formerly known as Aditya Kiran College of Applied Studies, established in 2002.
                             In May 2023, as part of the EXE Group of Companies Institutional Revamp Project, SRC underwent a transformation under the visionary leadership of Mr. Muhammed Jouhar KK, Chairman and Managing Director of EXE Group.
                             The college, nestled in the picturesque beauty of Kuttur, focuses on holistic development 

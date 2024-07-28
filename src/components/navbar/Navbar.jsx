@@ -1,5 +1,6 @@
 import React from 'react';
-import { Navbar as BootstrapNavbar,Container,Nav,NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Navbar as BootstrapNavbar,Button,Container,Nav } from 'react-bootstrap';
 import './style.css';
 
 function Navbar() {
@@ -11,15 +12,18 @@ function Navbar() {
                     <BootstrapNavbar.Brand href="#home"><img className="img-fluid" id="headerImage" src="http://exesunrise.com/public/img/logo/logo-white.png" alt="" /></BootstrapNavbar.Brand>
                     <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
                     <BootstrapNavbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mx-auto">
-                            <Nav.Link className='mx-2' href="#home">Home</Nav.Link>
+                <Nav className="mx-auto">
+                            <Nav.Link className='mx-2' href="/">Home</Nav.Link>
                             <Nav.Link className='mx-2' href="#about">About</Nav.Link>
-                            <Nav.Link className='mx-2' href="#admission">Admission</Nav.Link>
                             <Nav.Link className='mx-2' href="#course">Academics</Nav.Link>
                             <Nav.Link className='mx-2' href="#department">Student Life</Nav.Link>
                             <Nav.Link className='mx-2' href="#link">News and Events</Nav.Link>
                             <Nav.Link className='mx-2' href="#link">Contact Us</Nav.Link>
-                        </Nav>
+                            {/* <Nav.Link className='mx-2' href="#admission">Login</Nav.Link> */}
+                </Nav>
+                <BootstrapNavbar.Text>
+                  <Link to={'/login'}><Button variant='outline-light' className='px-4 fw-bold' >Login</Button></Link>
+                </BootstrapNavbar.Text>
                     </BootstrapNavbar.Collapse>
                 </Container>
                 </BootstrapNavbar>

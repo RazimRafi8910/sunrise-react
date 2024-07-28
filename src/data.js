@@ -20,16 +20,16 @@ export const collageCourse = [
     {
         tittle: "Bachelor of Computer Application",
         description: "A Bachelor of Computer Application degree is the core of Computer Science in today's world. bca admission is a three-year degree program.",
-        features:["some Feature of course", "another Feature"]
+        features:["Artificial Intelligence (AI)","Chat bot devolepment workshop", "Cybersecurity Essentials"]
     },
     {
         tittle: "Bachelor of Business Administration",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integerposuere erat a ante",
-        features:["some Feature of course", "another Feature"]
+        description: "TheBBA course offers a comprehensive understanding of business principles, management theories, and practical skills for success in the corporate world.",
+        features:["Logistic and Supply Chain Management", "Enterpreneurship Devolpment Program", "Digital Marketing Certificate"]
     },
     {
         tittle: "Bachelor of Commerce in Finance",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integerposuere erat a ante",
-        features:["some Feature of course", "another Feature"]
+        description: "B.Com is an undergraduate academic degree awarded for a course or program in Commerce. The duration of the B.Com course is 3 years",
+        features:["CMA(Certified Management Accountant)", "Tally Certificate"]
     }
 ]

@@ -13,3 +13,36 @@
     animation: fadeIn 1s ease-in;
     
   }
+
+  #aboutDescription{
+    font-size: 18px;
+  }
+
+  #courseCard h3{
+    font-size: 26px;
+  }
+
+  #courseDescription{
+    font-size: 18px;
+  }
+
+  #courseFeature{
+    font-size: 16px;
+  }
+
+  @media only screen and (max-width:500px){
+    #aboutDescription{
+      font-size: 14px;
+    }
+    #courseCard h3{
+      font-size: 24px;
+    }
+  
+    #courseDescription{
+      font-size: 17px;
+    }
+  
+    #courseFeature{
+      font-size: 15px;
+    }
+  }

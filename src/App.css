@@ -1,6 +1,9 @@
 
-
-
 body{
     background-color: #e2e9ed;
+    overflow-x: hidden;
+}
+
+#test{
+    color: #747373;
 }
