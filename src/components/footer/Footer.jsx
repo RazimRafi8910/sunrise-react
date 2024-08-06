@@ -6,7 +6,7 @@ function Footer() {
       <>
           <div className='border-secondary border-5 border-top mt-5' style={{backgroundColor:"#f3f3f3"}}>
               <div className="container">
-                  <div className="row mx-auto ps-5 pt-5">
+                  <div className="row mx-auto ps-3 pt-5">
                       <div className='col-lg-3 footerDisplay'>
                           <h4>Examination</h4>
                           <div className='fw-bold' style={{color:"#747373"}}>
@@ -41,19 +41,19 @@ function Footer() {
                           <img src="http://exesunrise.com/public/img/logo/logo-blue.png" width={"250px"} alt="" />
                           <hr />
                           <div className='d-flex align-items-center detailsDiv w-100'>
-                          <i class="fa-solid fa-building-columns me-2"></i>
+                          <i className="fa-solid fa-building-columns me-2"></i>
                           <p>Sunrise College of Advanced Studies SRC Campus , Kuttur (P.O) Mathamangalam , Kannur - 670 306</p>
                           </div>
                           <div className='d-flex align-items-center px-3 detailsDiv mb-3'>
-                          <i class="fa-solid fa-phone mt-1 me-2"></i>
+                          <i className="fa-solid fa-phone mt-1 me-2"></i>
                               <p className='m-0'>Office: 8606708333</p>
                           </div>
                           <div className='d-flex align-items-center px-3 detailsDiv mb-3'>
-                          <i class="fa-solid fa-phone mt-1 me-2"></i>
+                          <i className="fa-solid fa-phone mt-1 me-2"></i>
                           <p className='m-0'>Admission: 8086704111</p>
                           </div>
                           <div className='d-flex align-items-center px-3 detailsDiv mb-3'>
-                          <i class="fa-solid fa-envelope mt-1 me-2"></i>
+                          <i className="fa-solid fa-envelope mt-1 me-2"></i>
                             <p className='m-0'>srckuttur@gmail.com</p>
                           </div>
                       </div>

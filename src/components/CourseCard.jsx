@@ -14,7 +14,7 @@ function CourseCard({tittle,description,feature}) {
                                 {' '}{description}{' '}
                             </p>
                             {feature.map(data => (
-                                <p className="text-muted fw-bold my-2" id='courseFeature' ><i class="mx-2 fa-regular fa-circle-check"></i>{ data }</p>
+                                <p className="text-muted fw-bold my-2" id='courseFeature' ><i className="mx-2 fa-regular fa-circle-check"></i>{ data }</p>
                             ))}
                         </blockquote>
                     </Card.Body>

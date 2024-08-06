@@ -5,6 +5,8 @@ import { collageFeatures, collageCourse } from '../data';
 import AboutCard from '../components/AboutCard';
 import CourseCard from '../components/CourseCard';
 import IntershipCard from '../components/cards/IntershipCard';
+import PrincipleImage from '../assets/PrincipleImage.jpg';
+import VicePrinciple from '../assets/VicePrinciple.jpg';
 
 function Home() {
   return (
@@ -18,8 +20,8 @@ function Home() {
           <h2 className="fw-bold my-3">Our Special Features</h2>
         </div>
         <div className='row d-flex justify-content-center'>
-          {collageFeatures.map(data => (
-            <FeatureCard image={data.image} tittle={data.tittle} description={data.description} />
+          {collageFeatures.map((data,index) => (
+            <FeatureCard key={index} image={data.image} tittle={data.tittle} description={data.description} />
           ))}
         </div>
       </div>
@@ -39,8 +41,8 @@ function Home() {
           <hr />
         </div>
         <div className="row d-flex justify-content-center my-2">
-          {collageCourse.map(data => (
-            <CourseCard tittle={data.tittle} description={data.description} feature={data.features} />
+          {collageCourse.map((data,index) => (
+            <CourseCard key={index} tittle={data.tittle} description={data.description} feature={data.features} />
           ))}
         </div>
       </div>
@@ -48,10 +50,11 @@ function Home() {
       <div className="container my-5">
         <div>
           <h1 className='fw-bold mb-4'>Faculties</h1>
+          <hr />
         </div>
-        <div className='row'>
-          <IntershipCard name={"Mr. Muhammed Jouhar KK"}/>
-          <IntershipCard name={'Jabir'}/>
+        <div className='row justify-content-center'>
+          <IntershipCard name={"Mr. Muhammed Jouhar KK"} image={ PrincipleImage } position={"Principle"} />
+          <IntershipCard name={'Jabir'} image={VicePrinciple} position={"Vice Principle"} />
         </div>
       </div>
 

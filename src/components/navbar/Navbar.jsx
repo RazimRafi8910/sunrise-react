@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar as BootstrapNavbar,Button,Container,Nav } from 'react-bootstrap';
 import './style.css';
+import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from '../../firebase/firebaseConfg';
+import UserAccount from './UserAccount';
 
 function Navbar() {
+
+  const [isUser, setIsUser] = useState(null);
+
+  useEffect(() => {
+    let listent = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setIsUser(user);
+      } else {
+        setIsUser(null)
+      }
+    })
+    return () => {
+      listent()
+    }
+  }, []);
+
     return (
         <>
             <header id='header'>
@@ -13,16 +32,17 @@ function Navbar() {
                     <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
                     <BootstrapNavbar.Collapse id="basic-navbar-nav">
                 <Nav className="mx-auto">
-                            <Nav.Link className='mx-2' href="/">Home</Nav.Link>
-                            <Nav.Link className='mx-2' href="#about">About</Nav.Link>
+                  <Nav.Link className='mx-2' href="/">Home</Nav.Link>
+                  <Link className='nav-link' to={'/about'}>About</Link>
+                            {/* <Nav.Link className='mx-2' href="/about">About</Nav.Link> */}
                             <Nav.Link className='mx-2' href="#course">Academics</Nav.Link>
                             <Nav.Link className='mx-2' href="#department">Student Life</Nav.Link>
                             <Nav.Link className='mx-2' href="#link">News and Events</Nav.Link>
-                            <Nav.Link className='mx-2' href="#link">Contact Us</Nav.Link>
+                            <Nav.Link className='mx-2' href="/location">Location</Nav.Link>
                             {/* <Nav.Link className='mx-2' href="#admission">Login</Nav.Link> */}
                 </Nav>
                 <BootstrapNavbar.Text>
-                  <Link to={'/login'}><Button variant='outline-light' className='px-4 fw-bold' >Login</Button></Link>
+                  {isUser ? <UserAccount user={isUser}/> : <Link to={'/login'}><Button variant='outline-light' className='px-4 fw-bold' >Login</Button></Link>}
                 </BootstrapNavbar.Text>
                     </BootstrapNavbar.Collapse>
                 </Container>
