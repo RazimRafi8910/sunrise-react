@@ -1,7 +1,9 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import './cards/style.css';
-
+import { Link } from 'react-router-dom';
+import AboutImage from '../assets/about1.webp'
+//http://exesunrise.com/public/img/images/about1.webp
 
 function AboutCard() {
     return (
@@ -9,13 +11,13 @@ function AboutCard() {
             
             <div className=''>
                 <div className='text-center'>
-                    <h1 className='fw-bold'>Know About Sunrise</h1>
+                    <h1 className='fw-bold'>About Sunrise</h1>
                     <h3 >Sunrise College of Advanced Studies </h3>
                 </div>
 
                 <div className='row my-5'>
                     <div className='col-lg-4 col-11 mx-auto'>
-                    <img src="http://exesunrise.com/public/img/images/about1.webp" className='rounded-2' style={{width:"100%", height:"270px"}} />
+                    <img src={AboutImage} className='rounded-2' style={{width:"100%", height:"270px"}} />
                     </div>
                     <div className='col-lg-8 col-11 mx-auto'>
                         <p id='aboutDescription'>
@@ -24,7 +26,7 @@ function AboutCard() {
                             The college, nestled in the picturesque beauty of Kuttur, focuses on holistic development 
                             through a blend of academic excellence and real-world exposure. Empowering Minds, Illuminating Futures. Lighting the Path to Brilliance, Innovation, and Global Impact, One Enlightened Mind at a Time.
                         </p>
-                        <Button variant='dark'style={{backgroundColor:"#10203F"}} >Read More </Button>
+                        <Link to={'/about'}><Button variant='dark'style={{backgroundColor:"#10203F"}} >Read More </Button></Link>
                     </div>
                 </div>
 

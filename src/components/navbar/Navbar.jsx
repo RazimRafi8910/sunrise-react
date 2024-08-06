@@ -5,6 +5,8 @@ import './style.css';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../../firebase/firebaseConfg';
 import UserAccount from './UserAccount';
+import LogoImage from '../../assets/logo-white.png'
+//http://exesunrise.com/public/img/logo/logo-white.png
 
 function Navbar() {
 
@@ -28,7 +30,7 @@ function Navbar() {
             <header id='header'>
             <BootstrapNavbar expand="xl" className="navbar-dark position-relative py-3">
                 <Container>
-                    <BootstrapNavbar.Brand href="#home"><img className="img-fluid" id="headerImage" src="http://exesunrise.com/public/img/logo/logo-white.png" alt="" /></BootstrapNavbar.Brand>
+                    <BootstrapNavbar.Brand href="#home"><img className="img-fluid" id="headerImage" src={LogoImage} alt="" /></BootstrapNavbar.Brand>
                     <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
                     <BootstrapNavbar.Collapse id="basic-navbar-nav">
                 <Nav className="mx-auto">

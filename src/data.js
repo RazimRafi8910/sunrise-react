@@ -2,7 +2,7 @@ export const collageFeatures = [
     {
         tittle:"Innovative Curriculum at Sunrise College",
         description:"Our commitment to fostering forward-thinking individuals is embedded in the innovative curriculum at Sunrise",
-        image:"http://exesunrise.com/public/img/programmes/btech.jpg",
+        image:"../assets/btech.jpg",
     },
     {
         tittle: "Holistic Development Programs at Sunrise College",

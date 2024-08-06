@@ -21,7 +21,7 @@ function Home() {
         </div>
         <div className='row d-flex justify-content-center'>
           {collageFeatures.map((data,index) => (
-            <FeatureCard key={index} image={data.image} tittle={data.tittle} description={data.description} />
+            <FeatureCard key={index} image={index} tittle={data.tittle} description={data.description} />
           ))}
         </div>
       </div>
@@ -54,7 +54,7 @@ function Home() {
         </div>
         <div className='row justify-content-center'>
           <IntershipCard name={"Mr. Muhammed Jouhar KK"} image={ PrincipleImage } position={"Principle"} />
-          <IntershipCard name={'Jabir'} image={VicePrinciple} position={"Vice Principle"} />
+          <IntershipCard name={'Mr. Muhammed Jabir KK'} image={VicePrinciple} position={"Vice Principle"} />
         </div>
       </div>
 
