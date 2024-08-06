@@ -38,8 +38,8 @@ function Navbar() {
                   <Link className='nav-link' to={'/about'}>About</Link>
                             {/* <Nav.Link className='mx-2' href="/about">About</Nav.Link> */}
                             <Nav.Link className='mx-2' href="#course">Academics</Nav.Link>
-                            <Nav.Link className='mx-2' href="#department">Student Life</Nav.Link>
-                            <Nav.Link className='mx-2' href="#link">News and Events</Nav.Link>
+                            <Nav.Link className='mx-2' href="/students-life">Students Life</Nav.Link>
+                            <Nav.Link className='mx-2' href="/events">News and Events</Nav.Link>
                             <Nav.Link className='mx-2' href="/location">Location</Nav.Link>
                             {/* <Nav.Link className='mx-2' href="#admission">Login</Nav.Link> */}
                 </Nav>

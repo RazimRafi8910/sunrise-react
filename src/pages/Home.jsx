@@ -58,6 +58,16 @@ function Home() {
         </div>
       </div>
 
+      <div className="container my-5 d-none">
+        <div>
+          <h1 className='fw-bold mb-4'>Interships</h1>
+          <hr />
+        </div>
+        <div className="row">
+
+        </div>
+      </div>
+
     </>
   )
 }

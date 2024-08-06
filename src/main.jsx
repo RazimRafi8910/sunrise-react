@@ -7,6 +7,8 @@ import LoginPage from './pages/LoginPage.jsx';
 import Notfound404 from './components/Notfound404.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import LocationPage from './pages/LocationPage.jsx';
+import EventsPage from './pages/EventsPage.jsx';
+import StudentsPage from './pages/StudentsPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
       {
         path: '/location',
         element:<LocationPage/>
+      },
+      {
+        path: '/events',
+        element:<EventsPage/>
+      },
+      {
+        path: '/students-life',
+        element:<StudentsPage/>
       }
     ],
     errorElement: <>
