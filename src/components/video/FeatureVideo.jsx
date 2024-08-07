@@ -6,7 +6,7 @@ function featureVideo() {
   return (
     <>
       <div className="text-center bg-dark border-bottom border-5 border-secondary" style={{ position: 'relative', width: '100%', height: '80vh', overflow: 'hidden' }}>
-        <video style={{ objectFit: 'cover', width: '100%', height: '100%', opacity: 0.2 }} autoPlay controls loop muted>
+        <video style={{ objectFit: 'cover', width: '100%', height: '100%', opacity: 0.2 }} autoPlay playsInline loop muted>
           <source src="/WhatsApp Video 2024-07-17 at 10.36.19_777c5daa.mp4" type="video/mp4" />
         </video>
         <div className="overlay text-light typewriter" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
