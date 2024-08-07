@@ -7,7 +7,7 @@ function LoginPage() {
       <>
       <div style={{ }}>
         <div style={{ backgroundColor:"black"}}>
-        <video id='LoginVideo' loop muted autoPlay>
+        <video id='LoginVideo' loop muted controls autoPlay>
           <source type='video/mp4' src='/LoginBG.mp4'/>
         </video>
         </div>

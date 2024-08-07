@@ -35,7 +35,7 @@ function Navbar() {
                     <BootstrapNavbar.Collapse id="basic-navbar-nav">
                 <Nav className="mx-auto">
                   <Nav.Link className='mx-2' href="/">Home</Nav.Link>
-                  <Link className='nav-link' to={'/about'}>About</Link>
+                  <Link className='nav-link mx-2' to={'/about'}>About</Link>
                             {/* <Nav.Link className='mx-2' href="/about">About</Nav.Link> */}
                             <Nav.Link className='mx-2' href="#course">Academics</Nav.Link>
                             <Nav.Link className='mx-2' href="/students-life">Students Life</Nav.Link>
