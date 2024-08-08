@@ -31,5 +31,10 @@ export const collageCourse = [
         tittle: "Bachelor of Commerce in Finance",
         description: "B.Com is an undergraduate academic degree awarded for a course or program in Commerce. The duration of the B.Com course is 3 years",
         features:["CMA(Certified Management Accountant)", "Tally Certificate"]
+    },
+    {
+        tittle: "M. Sc Mathematics",
+        description: "he mathematical side concentrates on areas where computers are used, or which are relevant to computer science, namely algebra, general topology, number theory.",
+        features:["interships"]
     }
 ]

@@ -7,6 +7,7 @@ import CourseCard from '../components/CourseCard';
 import IntershipCard from '../components/cards/IntershipCard';
 import PrincipleImage from '../assets/PrincipleImage.jpg';
 import VicePrinciple from '../assets/VicePrinciple.jpg';
+import IntershipImage from '../assets/intershipImage.jpg';
 
 function Home() {
   return (
@@ -40,7 +41,7 @@ function Home() {
           <h1 className='fw-bold'>Academic Programs</h1>
           <hr />
         </div>
-        <div className="row d-flex justify-content-center my-2">
+        <div className="row d-flex justify-content- my-2">
           {collageCourse.map((data,index) => (
             <CourseCard key={index} tittle={data.tittle} description={data.description} feature={data.features} />
           ))}
@@ -58,13 +59,21 @@ function Home() {
         </div>
       </div>
 
-      <div className="container my-5 d-none">
+      <div className="container my-5">
         <div>
-          <h1 className='fw-bold mb-4'>Interships</h1>
+          <h1 className='fw-bold mb-4 text-center'>Interships</h1>
           <hr />
         </div>
         <div className="row">
-
+          <div className='col-lg-4 col-md-4 col-12'>
+          <img className='img-fluid' src={IntershipImage} alt="" />
+          </div>
+          <div className='col-lg-4 col-md-4 col-12'>
+          <img className='img-fluid' src={IntershipImage} alt="" />
+          </div>
+          <div className='col-lg-4 col-md-4 col-12'>
+          <img className='img-fluid' src={IntershipImage} alt="" />
+          </div>
         </div>
       </div>
 

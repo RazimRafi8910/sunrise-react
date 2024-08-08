@@ -51,7 +51,7 @@ function Login() {
 
     return (
         <>
-            <div className='container' style={{ height: "100vh", zIndex: '1' }}>
+            <div className='container' style={{ height: "90vh", zIndex: '1' }}>
                 <div className="row d-flex justify-content-center h-50 pt-5 align-items-center">
                     <div className='col-lg-4 col-md-5 col-9 border border-dark rounded-3 shadow-lg px-3 pt-3' style={{ backgroundColor: "#fff" }}>
                         <div className='text-center mb-5'>

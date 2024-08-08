@@ -10,7 +10,7 @@ function EventsPage() {
     return (
         <>
             <div className='container'>
-                <div>
+                <div className='mt-2'>
                     <h2>Events and news</h2>
                     <hr />
                 </div>
@@ -31,18 +31,18 @@ function EventsPage() {
                     <hr />
                 </div>
                 <div className='row'>
-                <div className='col-lg-3'>
-                        <video style={{ objectFit: 'cover', maxHeight: "70vh" }} autoPlay loop muted>
+                <div className='col-lg-3 mt-2 d-flex justify-content-center'>
+                        <video style={{ objectFit: 'cover', maxHeight: "70vh" }} autoPlay playsInline loop muted>
                             <source src={EventVideo1} type="video/mp4" />
                         </video>
                     </div>
-                    <div className='col-lg-3'>
-                        <video style={{ objectFit: 'cover', maxHeight: "70vh" }} autoPlay loop muted>
+                    <div className='col-lg-3 mt-2 d-flex justify-content-center'>
+                        <video style={{ objectFit: 'cover', maxHeight: "70vh" }} autoPlay playsInline loop muted>
                             <source src={EventVideo3} type="video/mp4" />
                         </video>
                     </div>
-                    <div className='col-lg-3'>
-                        <video style={{ objectFit: 'cover', maxHeight: "70vh" }} autoPlay loop muted>
+                    <div className='col-lg-3 mt-2 d-flex justify-content-center'>
+                        <video style={{ objectFit: 'cover', maxHeight: "70vh" }} autoPlay playsInline loop muted>
                             <source src={EventVideo2} type="video/mp4" />
                         </video>
                     </div>
